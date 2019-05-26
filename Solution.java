@@ -1,5 +1,3 @@
-package toBeSolved_CuttingBoards;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
