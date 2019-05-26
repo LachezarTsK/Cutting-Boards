@@ -1,3 +1,5 @@
+package toBeSolved_CuttingBoards;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -51,10 +53,11 @@ public class Solution {
 			if (cuts[i].horizintalCut) {
 				minimumCost += (long) cuts[i].cost * chunksOfColumns;
 				chunksOfRows++;
-			}       /**
-				 * Instead of "else{}", applying "else if(cuts[i].verticalCut){}" for better
-				 * readability, at the expense of one additional "if-check".
-				 */
+			}
+			/**
+			 * Instead of "else{}", applying "else if(cuts[i].verticalCut){}" for better
+			 * readability, at the expense of one additional "if-check".
+			 */
 			else if (cuts[i].verticalCut) {
 				minimumCost += (long) cuts[i].cost * chunksOfRows;
 				chunksOfColumns++;
@@ -68,7 +71,7 @@ class Cut implements Comparable<Cut> {
 	int cost;
 	/**
 	 * A boolean value only of "horizintalCut" or only of "verticalCut" can do 
-   * the job as well. Both are applied for better readability.
+	 * the job as well. Both are applied for better readability.
 	 */
 	boolean horizintalCut;
 	boolean verticalCut;
