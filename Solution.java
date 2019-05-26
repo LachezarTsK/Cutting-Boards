@@ -51,7 +51,7 @@ public class Solution {
 			if (cuts[i].horizintalCut) {
 				minimumCost += (long) cuts[i].cost * chunksOfColumns;
 				chunksOfRows++;
-			} /**
+			}       /**
 				 * Instead of "else{}", applying "else if(cuts[i].verticalCut){}" for better
 				 * readability, at the expense of one additional "if-check".
 				 */
